@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Poppins:wght@300&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Reusable Classes */
+
+.app-margin {
+  margin: 0 24px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Mobile Menu */
+
+.desktop-links {
+  display: none;
+}
+
+.header-section {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+}
+
+.my-links {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0707;
+  background-image: url("mobile-menu-2.jpg");
+  z-index: 20;
+  opacity: 0.8;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* transform: translate3d(0, -100%, 0);
+  transition: all 0.5s ease-out; */
+}
+
+.my-links i {
+  flex-direction: row;
+  margin-left: 90%;
+  margin-top: 25px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.my-links a {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 32px;
+  margin: 0 24px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff080882;
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.menu-icons {
+  flex-direction: row;
+}
+
+/* Header Section Styling */
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.header img {
+  width: 60%;
+}
+
+.header i {
+  font-size: 19px;
+}
+
+/* Intro Section Styling */
+
+.introduction {
+  background-image: url("rm209-ning-20-e.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.introduction img {
+  padding-top: 82px;
+  width: 60%;
+}
+
+.introduction h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.introduction p {
+  padding-bottom: 20px;
+}
+
+.introduction button {
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.section-container button {
+  color: white;
+  background-color: rgb(48, 45, 45);
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 40px;
+}
+
+/* Services Section Styling  #d52525 */
+
+.services-heading {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.services-heading h2 {
+  font-size: 32px;
+}
+
+.services-heading p {
+  font-size: 16px;
+  margin: 0 32px;
+  margin-top: 12px;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+
+.cards {
+  background-image: url("15303170_red_wavy_with_halftone_background.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.local-apps-cards-bg {
+  background-image: url("muchi-1\ \(1\).jpg");
+  background-size: contain;
+  background-color: #03111e;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #d52525;
+  padding: 26px 36px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+.card i {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  background-color: #03040de9;
+  margin: 15px;
+  transition: all 1s 0.4s ease-out;
+}
+
+.footer-body i {
+  font-size: 32px;
+}
+
+.card i:hover {
+  color: #d52525;
+}
+
+.card h3 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.card p {
+  line-height: 18px;
+}
+
+/* Reusable Card Color 151e27 */
+
+.background-color {
+  background-color: #1d4e7c;
+}
+
+/* Footer Section Styling */
+
+.footer {
+  background-image: url("footer-bg-3.jpg");
+  background-size: cover;
+}
+
+.footer-container {
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+.footer-heading h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.footer-heading p {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.footer-body {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-body span {
+  margin-bottom: 10px;
+}
+
+.footer-body span a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: dotted;
+}
+
+.card a:hover {
+  color: #d52525;
+}
+
+.footer-body span a:hover {
+  font-size: 20px;
+  color: #ff0707;
+  transition: color 3s;
+}
+
+@media (min-width: 768px) {
+  .fa-bars {
+    display: none;
+  }
+
+  .desktop-links {
+    display: block;
+  }
+
+  .desktop-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 12px;
+  }
+
+  .desktop-links a:hover {
+    color: #d52525;
+  }
+
+  .introduction {
+    background-image: url("rm209-ning-20-e.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+  }
+
+  .introduction button {
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 80%;
+    margin-bottom: 200px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .card:hover {
+    background-color: #03040de9;
+    margin: 15px;
+    transition: all 1s 0.4s ease-out;
+  }
+
+  .footer-body {
+    /* display: flex; */
+    flex-direction: column;
+  }
+}
